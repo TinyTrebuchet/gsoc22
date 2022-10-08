@@ -1,8 +1,14 @@
 # Google Summer of Code 2022 Report
 
-The GSoC 2022 has almost come to an end. I have managed to add Common Print Dialog Backends (CPDB) support to both GTK and Qt print dialogs. The optional Chromium print dialog could not be treated due to lack of time.
+Hi, I am Gaurav Guleria, and was selected as a GSoC 2022 contributor for OpenPrinting @ The Linux Foundation. My project was adding CPDB support to the GTK and Qt print dialogs, and optionally the Chromium print dialog if there was sufficient time left. 
 
-============================================================================================
+I have managed to add Common Print Dialog Backends (CPDB) support to both GTK and Qt print dialogs. The optional Chromium print dialog could not be treated due to lack of time.
+
+The GSoC 2022 program has ended, and my 1 month extension (due to exams and classes) is also about to come to an end. Here's a brief project report.
+
+
+
+-----
 
 ## 1. GTK Print dialog
 
@@ -15,7 +21,7 @@ The merge request has been created upstream, and is under review as of now:
 https://gitlab.gnome.org/GNOME/gtk/-/merge_requests/4930/
 
 
-============================================================================================
+-----
 
 ## 2. Qt Print Dialog
 
@@ -32,7 +38,7 @@ So, after deleting and setting up my new Qt VM for the third time, I started wor
 We discussed several ways of adding CPDB support to the Qt print dialog, and finally concluded to use the same `#if ... #endif` constructs for CPDB for now. After completing the CPDB support, I created the merge request here:
 
 
-============================================================================================
+-----
 
 ## 3. Improvements to cpdb-libs and cpdb-backend-cups
 
