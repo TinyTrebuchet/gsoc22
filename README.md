@@ -35,7 +35,7 @@ constructs. This led us to shift our focus (after talking with Till) to Firefox 
 
 So, after deleting and setting up my new Qt VM for the third time, I started working on it. Fortunately, Till talked with Albert Cid on the #kde-devel irc, who had worked on the Qt print dialog before, and was ready to help. With him, I was able to jump start the CPDB support for Qt print dialog. However, sometime after he suggested that we consult the Qt development team directly too, and so we did that: https://lists.qt-project.org/pipermail/development/2022-September/042993.html
 
-We discussed several ways of adding CPDB support to the Qt print dialog, and finally concluded to use the same `#if ... #endif` constructs for CPDB for now. After completing the CPDB support, I created the merge request here:
+We discussed several ways of adding CPDB support to the Qt print dialog, and finally concluded to use the same `#if ... #endif` constructs for CPDB for now. After completing the CPDB support, I created the merge request here: https://codereview.qt-project.org/c/qt/qtbase/+/437301
 
 
 -----
@@ -52,4 +52,7 @@ https://github.com/TinyTrebuchet/cpdb-libs/commit/070b0077586b72e9a8254b4dd9ce78
 https://github.com/TinyTrebuchet/cpdb-libs/commit/6af3be93d1a0282de4f56bbfe4d5fc9b5a370fbb
 - Support for multiple independent set of media-margins for each media-size:  
 https://github.com/TinyTrebuchet/cpdb-libs/commit/f30fd6074a8a72a8068c35e7a214d1836a5570ca
+- Support for human readable option and choice strings
+https://github.com/OpenPrinting/cpdb-libs/commit/46f8870c77918a63d795572f2459b1cb3cf31998
+- Bux fixes and other minor improvements
 
