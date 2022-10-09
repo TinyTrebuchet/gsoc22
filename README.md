@@ -35,7 +35,8 @@ constructs. This led us to shift our focus (after talking with Till) to Firefox 
 
 So, after deleting and setting up my new Qt VM for the third time, I started working on it. Fortunately, Till talked with Albert Cid on the #kde-devel irc, who had worked on the Qt print dialog before, and was ready to help. With him, I was able to jump start the CPDB support for Qt print dialog. However, sometime after he suggested that we consult the Qt development team directly too, and so we did that: https://lists.qt-project.org/pipermail/development/2022-September/042993.html
 
-We discussed several ways of adding CPDB support to the Qt print dialog, and finally concluded to use the same `#if ... #endif` constructs for CPDB for now. After completing the CPDB support, I created the merge request here: https://codereview.qt-project.org/c/qt/qtbase/+/437301
+We discussed several ways of adding CPDB support to the Qt print dialog, and finally concluded to use the same `#if ... #endif` constructs for CPDB for now. After completing the CPDB support, I created the merge request here:  
+https://codereview.qt-project.org/c/qt/qtbase/+/437301
 
 
 -----
