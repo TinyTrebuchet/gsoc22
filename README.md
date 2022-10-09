@@ -57,3 +57,9 @@ https://github.com/TinyTrebuchet/cpdb-libs/commit/f30fd6074a8a72a8068c35e7a214d1
 https://github.com/OpenPrinting/cpdb-libs/commit/46f8870c77918a63d795572f2459b1cb3cf31998
 - Bux fixes and other minor improvements
 
+
+-----
+
+## Word of Thanks
+
+I would like to thank [@till](https://github.com/tillkamppeter) for his continous and quick support throughout the GSoC period in all areas. This project wouldn't have been possible without you. I also want to sincerely thank [@tsdgeos](https://github.com/tsdgeos) for his help while adding CPDB support to the Qt print dialog. 
