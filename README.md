@@ -63,3 +63,27 @@ https://github.com/OpenPrinting/cpdb-libs/commit/46f8870c77918a63d795572f2459b1c
 ## Word of Thanks
 
 I would like to thank [@till](https://github.com/tillkamppeter) for his continous and quick support throughout the GSoC period in all areas. This project wouldn't have been possible without you. I also want to sincerely thank [@tsdgeos](https://github.com/tsdgeos) for his help while adding CPDB support to the Qt print dialog. 
+
+
+-----
+
+## Update : January, 2023
+
+I have added several improvements to CPDB in my winter vacations.  
+- Memory leaks in cpdb-libs identified and fixed.  
+https://github.com/OpenPrinting/cpdb-libs/commit/a86d7e1549ff3fc5fffc2d4c99666a29d1fd130b  
+- CPDB now supports disconnecting & reconnecting to DBus several times unlike before where it couldn't reconnect once disconnected.  
+https://github.com/OpenPrinting/cpdb-libs/commit/8408588be0e665e10ffc5ac78500a894b8aee11d  
+- CPDB now follows XDG base directory specifications instead of hardcoding system paths.  
+https://github.com/OpenPrinting/cpdb-libs/commit/578ead2ac091cb07113e4da7c3b6ad81615a6d9e  
+https://github.com/OpenPrinting/cpdb-backend-cups/commit/d2a3afb4d2f87d39b144dc728f6199c62ec57826  
+- CPDB now also provides generic groupings for most IPP options so print dialogs can now separate the options into several tabs accordingly.  
+https://github.com/OpenPrinting/cpdb-backend-cups/commit/28f7e865a55bb48b34a871e6a337acb05b8c737e  
+- Furthermore, CPDB now has full translation support, where the translations are fetched from the backends in user's requested locale. In cpdb-backend-cups, this is achieved by using translation support provided by cups-filters in catalog.h. Certain changes were also made to these functions (cfCatalog...) so that they accept locale as additional parameter instead of just defaulting to en-US.  
+https://github.com/OpenPrinting/cpdb-backend-cups/commit/28f7e865a55bb48b34a871e6a337acb05b8c737e  
+https://github.com/OpenPrinting/libcupsfilters/commit/86c010177378a32bbbb77e02fd31bed8a446e477  
+- Finally, CPDB has now much more verbose debugging which should be really helpful since it'll make bug fixing much easier in the future, considering that CPDB is a fairly new technology.  
+https://github.com/OpenPrinting/cpdb-libs/commit/20d62e35a1028800fc3b9926e4ac10184815d270  
+https://github.com/OpenPrinting/cpdb-libs/commit/e7eb00de2ea15e858d198a7e72ea1bc7ae16ec80  
+https://github.com/OpenPrinting/cpdb-libs/commit/92350c4e3636ad4067816d1b3272cddce3bb6204  
+
